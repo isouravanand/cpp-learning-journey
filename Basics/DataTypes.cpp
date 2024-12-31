@@ -8,8 +8,8 @@ char maggieType = 'A';
 bool isServed = true;
 
 cout <<maggie<<endl
-  <<waterTemp<< endl
-  <<masalaQuant>endl
+  <<waterTemp<<endl
+  <<masalaQuant<<endl
   <<maggieType<<endl
   <<isServed << endl;
 return 0;
