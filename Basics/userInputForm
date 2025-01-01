@@ -1,0 +1,23 @@
+// Write a C++ program to collect and display a student's details
+
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+  string name, address ,phone;
+  int roll;
+  cout<<"enter your name"<<endl;
+  getline(cin, name);
+ cout<<"enter your address"<<endl;
+  getline(cin, address);
+cout <<"enter your roll"<<endl;
+cin>>roll;
+cout<<"enter your phone no"<<endl;
+cin>>phone;
+ cout<<"Name:"<<name<<endl;
+ cout<<"Address:" <<address<< endl;
+cout<<"Roll no:"<<roll<<endl;
+cout<<"Phone No:"<<phone<<endl;
+return 0;
+}
