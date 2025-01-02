@@ -53,7 +53,7 @@ Relational Operators Program:
 A tea shop offers a loyalty program. Customers who buy more than 20 cups
 of a tea get a special "Gold"  batch and those who buys 10 to 20 Cup gets a "Silver" badge.
 Write a program to display the badge they will receive based on the number of cups they buy. 
-/*
+*/
 
 #include<iostream>
 #include<string>
