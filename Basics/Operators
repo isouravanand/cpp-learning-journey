@@ -1,0 +1,99 @@
+/*
+Arithmetic Operators Program:
+Create a program that calculates the total price of tea cups. 
+The user inputs the number of cups they want and the price per cup. 
+The program calculates the total price, apply a 5% discount if the total price
+is above a certain amount, and show the final price.
+*/
+
+#include<iostream>
+using namespace std;
+int main() {
+   int  teaCup;
+   double teaPrice,totalPrice, discountPrice;
+  cout<<"How many cups you want?"<<endl;
+  cin>>teaCup;
+  cout<<"How much price you want?"<<endl;
+  cin>>teaPrice;
+  totalPrice=teaCup*teaPrice;
+  if(totalPrice>50){
+       discountPrice=totalPrice-totalPrice*0.05;
+      cout<<"Total price = "<<discountPrice<<endl;
+ }else {
+  cout<<"Total price = "<<totalPrice<<endl;
+}
+ return 0;
+}
+
+/*
+Assignment Operators Program:
+Write a program that allows are user to input the number of tea
+bags they have. Assign additional bags to them based on certain conditions
+(e.g., if they have fewer than 10 bags, give them 5 extra). 
+Update the original numbers using assignment operators.
+*/
+
+#include <iostream>
+using namespace std;
+int main(){
+    int bags;
+    cout<<"How many bags you have?"<<endl;
+     cin>>bags;
+    if(bags<10){
+     bags+=5;
+    cout<<"total bags= "<<bags<<endl;
+} else{
+    cout<<"total bags= "<<bags<<endl;
+}
+  return 0;
+}
+
+/*
+Relational Operators Program:
+A tea shop offers a loyalty program. Customers who buy more than 20 cups
+of a tea get a special "Gold"  batch and those who buys 10 to 20 Cup gets a "Silver" badge.
+Write a program to display the badge they will receive based on the number of cups they buy. 
+/*
+
+#include<iostream>
+#include<string>
+using namespace std;
+int main(){
+    int cups;
+    string badge;
+    cout<<"No. of cups you had?"<<endl;
+    cin>>cups;
+    if(cups>20)
+    {
+     cout<<"GOLD"<<endl;
+    }
+else if (cups>=10 && cups<=20) {
+     cout<<"Bronze"<<endl;
+}
+ else {
+ cout<<"Not eligible"<<endl;
+}
+}
+
+/*
+Logical Operators Program:
+Create a program that checks if a user is eligible for a tea subscription discount. 
+The discount applies if the user is either a student or has purchased more than 15 cups.
+Ask the user to input their status (student or not )and their Cup count.
+*/
+
+#include<iostream>
+using namespace std;
+int main(){
+bool isStudent;
+int cups;
+cout<<"Are you a student 1 for yes 0 for no"<<endl;
+cin>>isStudent;
+cout<<"How many cups?"<<endl;
+cin>>cups;
+if(isStudent || cups>10){
+cout<<"ELLIGIBLE"<<endl;
+}else{
+cout<<"NOT ELLIGIBlE"<<endl;
+}
+}
