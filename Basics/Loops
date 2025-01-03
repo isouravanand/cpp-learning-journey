@@ -1,0 +1,37 @@
+/* 
+TASK_1: IF STATEMENT 
+Write a program to check if the user wants to order green tea. 
+If the user types "Green Tea" the program should confirm the order.
+*/
+
+#include<iostream>
+#include<string>
+using namespace std;
+int main(){
+ string teaName;
+cout<<"Type your chai"<<endl;
+ getline(cin,teaName);
+if(teaName=="Green Tea"){
+cout<<"order confirmed"<<endl;
+}
+}
+
+/*
+TASK_2:IF-ELSE STATEMENT 
+Write a program that checks if a tea shop is open if the current hour (input by the user) 
+is between 8:00 a.m. and 6:00 p.m. the shop is open otherwise it's closed
+*/
+
+#include<iostream>
+using namespace std;
+int main(){
+int time;
+cout<<"Enter Time with(0-23)"<<endl;
+cin>>time;
+if(time>=8 && time<=18){
+cout<<"Shop is opened"<<endl;
+}else {
+cout<<"Closed"<<endl;
+}
+}
+
