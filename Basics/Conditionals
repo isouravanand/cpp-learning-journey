@@ -1,0 +1,97 @@
+/* 
+TASK_1: IF STATEMENT 
+Write a program to check if the user wants to order green tea. 
+If the user types "Green Tea" the program should confirm the order.
+*/
+#include<iostream>
+#include<string>
+using namespace std;
+int main(){
+ string teaName;
+cout<<"Type your chai"<<endl;
+ getline(cin,teaName);
+if(teaName=="Green Tea"){
+cout<<"order confirmed"<<endl;
+}
+}
+
+/*
+TASK_2:IF-ELSE STATEMENT 
+Write a program that checks if a tea shop is open if the current hour (input by the user) 
+is between 8:00 a.m. and 6:00 p.m. the shop is open otherwise it's closed
+*/
+#include<iostream>
+using namespace std;
+int main(){
+int time;
+cout<<"Enter Time with(0-23)"<<endl;
+cin>>time;
+if(time>=8 && time<=18){
+cout<<"Shop is opened"<<endl;
+}else {
+cout<<"Closed"<<endl;
+}
+}
+
+/*
+TASK_3:
+A teashop offers discounts based on the number of tea cups ordered. Write a program that checks the number of cups ordered and applies a discount 
+•more than 20 cups 20% discount
+•between 10 and 20 cups 10% discount 
+•less than 10 cups no discount
+*/
+#include<iostream>
+using namespace std;
+int main(){
+   int chaiQuant;
+   double discount,price;
+   cout<<"How many cups order?"<<endl;
+  cin>>chaiQuant;
+  price=chaiQuant*10;
+  if(chaiQuant>10 && chaiQuant <20)
+{
+   discount=0.1;
+}else if(chaiQuant>20){
+  discount=0.2;
+}else{
+discount=0;
+}
+price-=price*discount;
+cout<<"Total Price: "<<price<<endl;
+}
+
+/*
+TASK_4: SWITCH CASE
+Write a program that leads the user select there tea type from a menu. Use a switch case statement to display the price based on the selected tea 
+•green tea 2$ 
+•black tea 3$ 
+•oolong tea 4$
+*/
+#include<iostream>
+using namespace std;
+int main(){
+        int choice;
+        float price;
+cout<<"enter your choice"<<endl;
+cout<<"1.Green Tea"<<endl;
+cout<<"2.Black Tea"<<endl;
+cout<<"3.Oolong Tea"<<endl;
+cin>>choice;
+switch(choice){
+case 1:
+ price=1.0;
+cout<<"You chose Green Tea of price:"<<price<<endl;
+break;
+case 2:
+ price=2.0;
+cout<<"You chose Black Tea of price:"<<price<<endl;
+break;
+case 3:
+ price=3.0;
+cout<<"You chose Oolong Tea of price:"<<price<<endl;
+break;
+default :
+cout<<"Invalid choice"<<endl;
+}
+return 0;
+}
