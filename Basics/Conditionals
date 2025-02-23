@@ -66,7 +66,7 @@ Write a program that leads the user select there tea type from a menu. Use a swi
 •green tea 2$ 
 •black tea 3$ 
 •oolong tea 4$
-*/
+
 #include<iostream>
 using namespace std;
 int main(){
@@ -95,3 +95,33 @@ cout<<"Invalid choice"<<endl;
 }
 return 0;
 }
+
+#include<iostream>
+using namespace std;
+int main(){
+	int choice;
+	float price;
+cout<<"enter your choice"<<endl;
+cout<<"1.Green Tea"<<endl;
+cout<<"2.Black Tea"<<endl;
+cout<<"3.Oolong Tea"<<endl;
+cin>>choice;
+switch(choice){
+case 1:
+ price=1.0;
+cout<<"You chose Green Tea of price:"<<price<<endl;
+break;
+case 2:
+ price=2.0;
+cout<<"You chose Black Tea of price:"<<price<<endl;
+break;
+case 3:
+ price=3.0;
+cout<<"You chose Oolong Tea of price:"<<price<<endl;
+break;
+default :
+cout<<"Invalid choice"<<endl;
+}
+return 0;
+}
+*/
