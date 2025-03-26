@@ -1,0 +1,42 @@
+/*
+Write a program to store the details of 10 students and print them in tabular form using structure in c++.
+*/
+
+#include<iostream>
+using namespace std;
+struct Student{
+	char nm[20],co[20];
+	int roll,marks;
+	
+	void setFun()
+	{
+		cout<<"Enter Name: "<<endl;
+		cin>>nm;
+		cout<<"Enter course: "<<endl;
+		cin>>co;
+		cout<<"Enter Roll: "<<endl;
+		cin>>roll;
+		cout<<"Enter marks: "<<endl;
+		cin>>marks;
+	}
+	
+	void getFun()
+	{
+			cout<<nm<<"\t"<<co<<"\t"<<roll<<"\t"<<marks<<endl;
+		
+	}
+};
+
+int main()
+{
+	Student A[10];
+	for(int i=0;i<10;i++)
+	{
+	A[i].setFun();
+	}	
+		cout<<"Name \t"<<"Course \t"<<"Roll \t"<<"Marks"<<endl;
+		for(int i=0;i<10;i++)
+		{
+		A[i].getFun();
+}
+}
