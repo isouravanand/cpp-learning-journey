@@ -1,0 +1,47 @@
+/* Write a program to calculate and display Actual Salary. */
+#include<iostream>
+using namespace std;
+
+class Employee{
+	private:
+		char nm[20], ds[20];
+		int eid;
+		float baseSal,TA,DA,HRA,PF,salary;
+		
+		public:
+			//function to store data of employee
+			void setFun()
+			{
+				cout<<"Enter Name: ";
+				cin>>nm;
+				cout<<"Enter Designation: ";
+				cin>>ds;
+				cout<<"Enter EID: ";
+				cin>>eid;
+				cout<<"Enter Base Salary: ";
+				cin>>baseSal;
+				cout<<"Enter TA, DA, HRA, PF: ";
+				cin>>TA>>DA>>HRA>>PF;
+			}
+			//function to display employee details
+			void getFun()
+			{
+				cout<<"Name: "<<nm<<endl;
+				cout<<"Designation: "<<ds<<endl;
+				cout<<"EID: "<<eid<<endl;
+				cout<<"Base Salary: "<<baseSal<<endl;
+				cout<<"TA,DA,HRA,PF: "<<TA<<","<<DA<<","<<HRA<<","<<PF<<endl;
+			}
+			//Function to calculate and display Actual Salary
+			void actualSal()
+			{
+				salary=baseSal+TA+DA+HRA-PF;
+				cout<<"Actual Salary: "<<salary;
+			}
+};
+int main(){
+	Employee e1;
+	e1.setFun();
+	e1.getFun();
+	e1.actualSal();
+}
